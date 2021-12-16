@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+
+<html> 
+
+<style>
+  
+    div {font-size:20px;
+        /*background-color:#20b853;*/
+    }
+    
+    </style>
+	
+	
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+    
+
+<body>
+
+<div id="jstree_demo_div"></div>
+<script>
+let data={"飲料":{
+"紅茶":{}
+,"綠茶":{}
+
+}
+};
+function Draw(dom,jo){
+let ul=$("<ul>").appendTo(dom);
+    for(let key in jo){
+    let val=jo[key];
+    let li=$(`<li>${key}</li>`).appendTo(ul);
+    Draw(li,val);
+    
+    }
+
+}
+$(document).ready(function(){
+    let div=$("<div 目錄>").appendTo("body");
+        Draw(div,data);
+});
+
+</script>  
+
+<h1><img src="file:///C:/Users/Administrator/Desktop/%E8%9B%8B.png"border="0"width="20px"height="20px"></a>  zi sen breakfast <a href="https://breakfast-restaurant-4604.business.site/?utm_source=gmb&utm_medium=referral"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzC2JyZDZ_RaWf0qp11K0lcvB6b6kYNMoqtZAQ9hiPZ4cTIOB" border="0"width="20px"height="20px"t=100>
+<a href="https://www.facebook.com/pages/%E6%99%A8%E8%8A%AF%E8%A4%87%E5%90%88%E5%BC%8F%E6%97%A9%E5%8D%88%E9%A4%90/101198661681892"><img src="https://www.alexacademy.com.tw/wp-content/uploads/2017/04/fb-logo.png" border="0"width="20px"height="20px"t=100></a></h1>
+
+</body>
+</html>
